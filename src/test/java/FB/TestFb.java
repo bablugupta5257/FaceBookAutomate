@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-@Listeners(ListenersForSS.class)
+@Listeners(ExtentReportManage.class)
 public class TestFb extends BaseClass{
 
 @Test
@@ -39,7 +39,7 @@ public void CreateUser() throws EncryptedDocumentException, IOException, Interru
 	}
 	Thread.sleep(2000);
 	driver.findElement(By.xpath("//input[@aria-label='Mobile number or email address']")).sendKeys(lc.readExceldataForNumeric("Sheet1", 3, 7));
-	driver.findElement(By.id("password_step_input")).sendKeys(lc.readExceldata("Sheet1", 3, 8));
+	driver.findElement(By.id("password_step_input")).sendKeys(lc.readExceldata("Sheet", 3, 8));
 	Thread.sleep(5000);
 	
 	driver.navigate().refresh();

@@ -6,12 +6,11 @@
       <class name="FB.TestFb">
         <methods>
           <include name="login_Actitime"/>
-          <include name="DatabaseDisconect"/>
           <include name="LaunchBrowser"/>
+          <include name="DatabaseDisconect"/>
           <include name="CreateUser"/>
           <include name="Logout"/>
           <include name="DataBaseConnection"/>
-          <include name="Loginpage"/>
           <include name="CloseDriver"/>
         </methods>
       </class> <!-- FB.TestFb -->
